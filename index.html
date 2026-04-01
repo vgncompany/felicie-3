@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Félicie — Bistrot Parisien, Paris 14e</title>
+<meta name="description" content="Félicie, bistrot parisien authentique au 174 avenue du Maine, Paris 14e. Cuisine française traditionnelle, produits bio, fait maison, terrasse chauffée. Ouvert 7j/7.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Google Sans','DM Sans',sans-serif;background:#f8f9fa;color:#202124;line-height:1.6}
+
+/* HEADER */
+.hero{background:#1a1a2e;color:#fff;padding:2.5rem 1.25rem 2rem;text-align:center}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:99px;margin-bottom:1rem}
+.hero-title{font-size:28px;font-weight:600;letter-spacing:-.02em;margin-bottom:6px}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:1.5rem}
+.hero-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.tag{background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);font-size:12px;padding:4px 10px;border-radius:99px}
+
+/* CONTAINER */
+.container{max-width:540px;margin:0 auto;padding:0 1.25rem 3rem}
+
+/* SECTION */
+.section{background:#fff;border-radius:12px;padding:1.25rem;margin-top:1rem;border:1px solid #e8eaed}
+.section-label{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#9aa0a6;margin-bottom:.75rem}
+.section-title{font-size:16px;font-weight:600;color:#202124;margin-bottom:.5rem}
+
+/* INFOS */
+.info-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #f1f3f4}
+.info-row:last-child{border-bottom:none;padding-bottom:0}
+.info-icon{width:18px;height:18px;flex-shrink:0;margin-top:1px;color:#5f6368}
+.info-text{font-size:14px;color:#3c4043}
+.info-text a{color:#1a73e8;text-decoration:none}
+
+/* HORAIRES */
+.hours-grid{display:grid;gap:4px}
+.hour-row{display:flex;justify-content:space-between;font-size:13px;padding:4px 0;border-bottom:1px solid #f1f3f4}
+.hour-row:last-child{border-bottom:none}
+.hour-day{color:#5f6368}
+.hour-time{color:#202124;font-weight:500}
+.hour-row.today .hour-day,.hour-row.today .hour-time{color:#1e8e3e;font-weight:600}
+
+/* HISTOIRE */
+.histoire-text{font-size:14px;color:#3c4043;line-height:1.7}
+
+/* RÉSERVATION */
+.resa-btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  width:100%;padding:14px;
+  background:#e8f0fe;color:#1a73e8;
+  border-radius:10px;
+  font-size:14px;font-weight:600;
+  text-decoration:none;
+  transition:background .15s;
+  margin-top:.75rem;
+}
+.resa-btn:hover{background:#d2e3fc}
+
+/* AVIS */
+.avis-section{background:#fff;border-radius:12px;padding:1.5rem 1.25rem;margin-top:1rem;border:1px solid #e8eaed;text-align:center}
+.avis-question{font-size:17px;font-weight:600;color:#202124;margin-bottom:.4rem}
+.avis-sub{font-size:13px;color:#5f6368;margin-bottom:1.25rem}
+.btns{display:flex;flex-direction:column;gap:10px}
+.btn{
+  width:100%;padding:16px 18px;
+  border-radius:12px;
+  font-family:'Google Sans','DM Sans',sans-serif;
+  font-size:15px;font-weight:500;
+  display:flex;align-items:center;gap:12px;
+  text-decoration:none;
+  transition:opacity .15s,transform .1s;
+  -webkit-tap-highlight-color:transparent;
+  text-align:left;
+}
+.btn:active{transform:scale(.98);opacity:.85}
+.btn-yes{background:#1e8e3e;color:#fff}
+.btn-yes:hover{opacity:.9}
+.btn-no{background:#f8f9fa;color:#202124;border:1.5px solid #dadce0}
+.btn-no:hover{background:#f1f3f4}
+.btn-icon{font-size:22px;line-height:1;flex-shrink:0}
+.btn-label{flex:1}
+.btn-chevron{margin-left:auto;flex-shrink:0;opacity:.6}
+
+/* FOOTER */
+.footer{text-align:center;margin-top:1.5rem;font-size:11px;color:#bdc1c6}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Paris 14e · Bistrot Parisien</div>
+  <div class="hero-title">Le Félicie</div>
+  <div class="hero-sub">174, avenue du Maine · 75014 Paris</div>
+  <div class="hero-tags">
+    <span class="tag">Cuisine française</span>
+    <span class="tag">Produits bio</span>
+    <span class="tag">Fait maison</span>
+    <span class="tag">Terrasse</span>
+    <span class="tag">Brunch dimanche</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- INFOS PRATIQUES -->
+  <div class="section">
+    <div class="section-label">Informations</div>
+    <div class="info-row">
+      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span class="info-text">174, avenue du Maine, 75014 Paris<br><a href="https://maps.google.com/?q=Félicie+174+avenue+du+Maine+Paris" target="_blank">Voir sur Google Maps →</a></span>
+    </div>
+    <div class="info-row">
+      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="info-text"><a href="tel:0145410575">01 45 41 05 75</a></span>
+    </div>
+    <div class="info-row">
+      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span class="info-text">Ouvert 7j/7 · 7h00 – 2h00</span>
+    </div>
+    <div class="info-row">
+      <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span class="info-text">Brunch le dimanche · Formule déjeuner en semaine</span>
+    </div>
+  </div>
+
+  <!-- AVIS -->
+  <div class="avis-section">
+    <div class="avis-question">Votre avis compte pour nous</div>
+    <div class="avis-sub">Avez-vous apprécié votre visite chez Félicie ?</div>
+    <div class="btns">
+      <a class="btn btn-yes" href="https://www.google.com/maps/place/F%C3%A9licie/@48.8324542,2.3220457,571m/data=!3m1!1e3!4m8!3m7!1s0x47e671b4112ca19b:0xfe08ad3177c3a71f!8m2!3d48.8324507!4d2.324626!9m1!1b1!16s%2Fg%2F1tfzr6wl?entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <span class="btn-icon">😊</span>
+        <span class="btn-label">Oui, très satisfait !</span>
+        <svg class="btn-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+      <a class="btn btn-no" href="https://le-felicie-avis.crd.co" target="_blank">
+        <span class="btn-icon">😕</span>
+        <span class="btn-label">Pas vraiment...</span>
+        <svg class="btn-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9aa0a6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- RÉSERVATION -->
+  <div class="section">
+    <div class="section-label">Réservation</div>
+    <p class="histoire-text">Réservez dès maintenant votre prochaine visite chez nous.</p>
+    <a class="resa-btn" href="https://widget.thefork.com/fr/41590f5d-2c7e-43dd-b242-911e29ca6ef0?step=date&utm_source=felicie.info" target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Réserver une table en ligne
+    </a>
+  </div>
+
+</div>
+</body>
+</html>
